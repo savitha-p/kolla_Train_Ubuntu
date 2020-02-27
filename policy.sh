@@ -22,3 +22,4 @@ sleep 15s
 mkdir -p /etc/ceph
 cp /etc/kolla/cinder-volume/*.keyring /etc/ceph/
 cp /etc/kolla/cinder-volume/ceph.conf /etc/ceph/
+scp /etc/ceph/* root@172.172.3.61:/etc/ceph/

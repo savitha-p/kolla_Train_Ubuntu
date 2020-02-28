@@ -68,5 +68,4 @@ WantedBy=multi-user.target
 systemctl daemon-reload
 systemctl restart docker
 
-
-
+mkdir -p /etc/ceph

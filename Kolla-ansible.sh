@@ -1,8 +1,8 @@
 #!/bin/sh
 pvcreate /dev/vda
 vgcreate cinder-volumes /dev/vda
-echo "nameserver 172.172.3.1" >> /etc/resolve.conf
-echo "nameserver 8.8.8.8" >> /etc/resolve.conf
+echo "nameserver 172.172.3.1" >> /etc/resolv.conf
+echo "nameserver 8.8.8.8" >> /etc/resolv.conf
 mkdir /etc/kolla/config
 pip install "kolla-ansible==9.0.0"
 cp -r /usr/local/share/kolla-ansible/etc_examples/kolla /etc/kolla/
